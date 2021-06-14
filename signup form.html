@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nine.css">
+    <style>
+        input{
+    height:80px;
+    width: 40%;
+    background:linear-gradient(skyblue,white,crimson);
+    color:blue;
+    font-size: 40px;
+    border-radius:20px;
+    
+}
+#c{
+    height:50px;
+    width: 30%;
+    margin-left: 40px;
+    color:black;
+    background:linear-gradient(skyblue,pink,white);
+    
+}
+    </style>
+    
+    <script>
+        function name1(){
+            a=prompt("enter website name")
+            document.getElementById("c").innerHTML=a
+        }
+        function pass(){
+            len = document.getElementById('a').value
+            len = len.length
+            if(len+1<8){
+                document.getElementById('b').innerHTML="Too short"
+                document.getElementById('b').style.color="red"
+            }
+            else if(len+1>=8 && len+1<=12){
+                document.getElementById('b').innerHTML="strong"
+                document.getElementById('b').style.color="green"
+            }
+            else{
+                document.getElementById('b').innerHTML="Too large"
+                document.getElementById('b').style.color="blue"
+            }
+        }
+    </script> 
+</head>
+<body>
+    <button onclick="name1()">click here for login</button><br><br>
+    <h1><div id="c"></div></h1>
+    <h1>USER ID</h1>:<input type="text"><br><br>
+    <h1>PASSWORD</h1> :<input type="password" id="a" onkeypress="pass()"maxlength="20">
+    <h1 id="b"</h1>
+     
+</body>
+</html>
