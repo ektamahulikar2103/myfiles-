@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+center{
+    color: crimson;
+    font-size:40px;
+    margin-right:50px;
+}
+table,th,td{
+    border: 2px solid blue;
+}
+table{
+    height: 100px;
+    width: 60%;
+    margin-left:20%;
+    font-size: 20px;
+}
+input{
+    height: 100px;
+    width: 60%;
+    margin-left: 10%;
+    background-color:pink;
+    color: purple;
+    font-size:20px;
+}
+    </style>
+    <script>
+        function maths(){
+    x=document.getElementById('a1').value
+    y=document.getElementById('a2').value
+    z=Number(x)+Number(y)
+    document.getElementById('a3').value=z
+    if(z>=90){
+        document.getElementById('a4').value="A+"
+    }
+    else if(z>=60 && z<90){
+        document.getElementById('a4').value="B"
+    }
+    else if(z>=40 && z<60){
+        document.getElementById('a4').value="C"
+    }
+    else{
+        document.getElementById('a4').value="fail"
+    }
+    
+}
+function english(){
+    x=document.getElementById('b1').value
+    y=document.getElementById('b2').value
+    z=Number(x)+Number(y)
+    document.getElementById('b3').value=z
+    if(z>=90){
+        document.getElementById('b4').value="A+"
+    }
+    else if(z>=60 && z<90){
+        document.getElementById('b4').value="B"
+    }
+    else if(z>=40 && z<60){
+        document.getElementById('b4').value="C"
+    }
+    else{
+        document.getElementById('b4').value="fail"
+
+    }
+    
+}
+function hindi(){
+    x=document.getElementById('c1').value
+    y=document.getElementById('c2').value
+    z=Number(x)+Number(y)
+    document.getElementById('c3').value=z
+    if(z>=90){
+        document.getElementById('c4').value="A+"
+    }
+    else if(z>=60 && z<90){
+        document.getElementById('c4').value="B"
+    }
+    else if(z>=40 && z<60){
+        document.getElementById('c4').value="C"
+    }
+    else{
+        document.getElementById('c4').value="fail"
+
+    }
+    
+}
+
+function physics(){
+    x=document.getElementById('d1').value
+    y=document.getElementById('d2').value
+    z=Number(x)+Number(y)
+    document.getElementById('d3').value=z
+    if(z>=90){
+        document.getElementById('d4').value="A+"
+    }
+    else if(z>=60 && z<90){
+        document.getElementById('d4').value="B"
+    }
+    else if(z>=40 && z<60){
+        document.getElementById('d4').value="C"
+    }
+    else{
+        document.getElementById('d4').value="fail"
+
+    }
+    
+}
+
+function chemistry(){
+    x=document.getElementById('e1').value
+    y=document.getElementById('e2').value
+    z=Number(x)+Number(y)
+    document.getElementById('e3').value=z
+    if(z>=90){
+        document.getElementById('e4').value="A+"
+    }
+    else if(z>=60 && z<90){
+        document.getElementById('e4').value="B"
+    }
+    else if(z>=40 && z<60){
+        document.getElementById('e4').value="C"
+    }
+    else{
+        document.getElementById('e4').value="fail"
+
+    }
+    
+}
+
+
+    </script>
+</head>
+<body>
+    <h1></h1><center>MARKSHEET</center></h1>
+    <table>
+        <center>
+        <tr>
+            <th>Subject</th>
+            <th>Theory</th>
+            <th>Practical</th>
+            <th>Total</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td><input type="text" id="a1"></td>
+            <td><input type="text" id="a2" onchange="maths()"></td>
+            <td><input type="text" id="a3" onchange="maths()"></td>
+            <td><input type="text" id="a4"></td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td><input type="text" id="b1"></td>
+            <td><input type="text" id="b2" onchange="english()"></td>
+            <td><input type="text" id="b3" onchange="english()"></td>
+            <td><input type="text" id="b4"></td>
+        </tr>
+        <tr>
+            <td>Hindi</td>
+            <td><input type="text" id="c1"></td>
+            <td><input type="text" id="c2" onchange="hindi()"></td>
+            <td><input type="text" id="c3" onchange="hindi()"></td>
+            <td><input type="text" id="c4"></td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td><input type="text" id="d1"></td>
+            <td><input type="text" id="d2" onchange="physics()"></td>
+            <td><input type="text" id="d3" onchange="physics()"></td>
+            <td><input type="text" id="d4"></td>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td><input type="text" id="e1"></td>
+            <td><input type="text" id="e2" onchange="chemistry()"></td>
+            <td><input type="text" id="e3" onchange="chemistry()"></td>
+            <td><input type="text" id="e4"></td>
+        </tr>
+        </center>
+
+    </table>
+    
+    
+</body>
+</html>
