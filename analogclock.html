@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-image: url(./—Pngtree—texture\ background\ of\ color\ gradient_989486.png);
+        }
+        
+        #e{
+             position: relative;
+            margin: auto;
+            width: 40vw;
+            height: 40vw;
+            background: url(./kisspng-clock-face-clip-art-analog-clock-without-hands-5ab6587983c927.8573236515218996415398.png);
+            background-size: 100%;
+           
+            top: 80px;
+        }
+        #hour,#minute,#second{
+            position: absolute;
+             border-radius: 10px;
+            
+        }
+        #hour{
+            height:26%;
+            width:1%;
+            top: 25%;
+            left:49%;
+            background-color:black;
+            transform-origin: bottom;
+        }
+         
+        #minute{
+            height: 32%;
+            width: .9%;
+            top: 17%;
+            background-color:black;
+            left: 51%;
+            opacity: .8;
+            transform-origin: bottom;
+        } 
+        #second{
+            background-color:black;
+            height:21%;
+            width: 0.9%;
+            top: 29%;
+            left: 51%;
+            opacity: .8;
+            transform-origin: bottom;
+        }
+        </style>
+         <script>
+                setInterval(() =>
+            {
+            d = new Date();
+            htime =d.getHours();
+            mtime =d.getMinutes();
+            stime =d.getSeconds();
+            hrotation = 30*htime + mtime/2;
+            mrotation =6*mtime;
+            srotation = 6*stime;
+        
+            hour.style.transform =`rotate(${hrotation}deg)`;
+            minute.style.transform =`rotate(${mrotation}deg)`;
+            second.style.transform =`rotate(${srotation}deg)`;
+        
+            },1000);
+            </script>
+        </head>
+        <body>
+            <div id="e">
+                <div id="hour"></div>
+                <div id="minute"></div>
+                <div id="second"></div>
+            </div>
+        
+</body>
+</html>
